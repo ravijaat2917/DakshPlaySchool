@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-con{
+    background-color: #00c7c4;
+    padding: 100px 0px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding-bottom: 20px;
+}
+.left-area{
+    align-items: center;
+    text-align: center;
+}
+.right-area{
+    align-items: center;
+    text-align: center;
+    /* border: solid rgb(69, 53, 212) 2px; */
+    margin-top: 12px;
+    margin-right: 200px ;
+}
+#Register-text{
+    font-weight: bolder;
+    font-size: 80px;
+    color: rgb(69, 53, 212);
+}
+.admissionopemText{
+    color: white;
+    font-size: x-large;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding: 30px 50px;
+}
+form{
+    margin-top: 25px;
+    margin-right: 360px;
+    width: 100%;
+    border: solid blue 2px;
+    background-color: rgb(69, 53, 212);
+    border-radius: 10px;
+    height: 450px;
+    width: max-content;
+}
+/* 
+form input{
+    margin-top: 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+}
+form select{
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 3px 18%;
+    border: none;
+    border-radius: 5px;
+}
+form button{
+    margin: 19px 0px;
+    padding: 10px 0px;
+    font-size: 22px;
+    background-color: red;
+    padding: 5px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+} */
+
+@media only screen and (max-width: 1280px){
+    .container{
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+    #Register-text{
+        font-size: x-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .main-con{
+        padding: 0px;
+    }
+    .admissionopemText{
+        font-size: large;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .right-area{
+        margin-right: 0px ;
+    }
+}

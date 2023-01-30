@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.MainHead{
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+}
+
+#mainHeading{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#content{
+    padding:20px;
+    font-size: larger;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 80px;
+    align-items: center;
+}
+.flexBasis{
+    border: solid blue 2px;
+    border-radius: 20px;
+    flex-basis: 23%;
+    padding:0px  0px 20px 0px;
+    margin-bottom: 25px;
+}
+
+.flexBasis:hover{
+    transform: translateY(-5px);
+}
+.upperContent{
+    display: flex;
+    text-align: center;
+    justify-content: center
+}
+
+.upperContent img{
+    width: 315px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+.lowerContentz{
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.lowerContentz h2{
+    padding-top: 20px;
+    color: blue;
+    font-size: xx-large;
+}
+.lowerContentz h4{
+    color: red;
+    padding-top: 10px;
+}
+.lowerContentz h6{
+    color: grey;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: medium;
+}
+
+@media only screen and (max-width: 1280px){
+    .flexcontainer{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    #mainHeading{
+        font-size: 30px;
+    }
+    .flexcontainer{
+        flex-wrap: wrap;
+    }
+    .flexBasis{
+        width: fit-content;
+    }
+    .upperContent img{
+        width: 200px;
+        border-radius: 20px;
+        padding-bottom: 10px;
+    }
+    h2{
+        display: none;
+    }
+}
